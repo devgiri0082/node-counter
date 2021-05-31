@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Contact</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .container {
+        background: rgb(255, 222, 223);
+        width: 100vw;
+        height: 100vh;
+      }
+      .header {
+        width: 100vw;
+        height: 15vh;
+        padding: 0px 40px;
+        background: rgb(64, 61, 117);
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+      }
+      .left {
+        font-size: 30px;
+      }
+      .right {
+        display: flex;
+        gap: 15px;
+      }
+      .link {
+        cursor: pointer;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      .body {
+        background: rgb(255, 222, 223);
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .title {
+        font-size: 40px;
+        font-weight: 550;
+      }
+      .counter {
+        text-align: center;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="left">NodeJS</div>
+        <div class="right">
+          <div class="link home">
+            <a href="http://127.0.0.1:4000/">Home</a>
+          </div>
+          <div class="link product">
+            <a href="http://127.0.0.1:4000/product">Product</a>
+          </div>
+          <div class="link contact">
+            <a href="http://127.0.0.1:4000/contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="title">Contact</div>
+        <div class="counter">Website visited: %Counter% times</div>
+      </div>
+    </div>
+  </body>
+</html>
